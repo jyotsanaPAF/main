@@ -22,7 +22,7 @@ public class EnquiryTest extends BaseTest2 {
 //	  driver.get("https://dev-main-master1.vedant.life/");
 //	}
 	
-//	@Test(priority = 0, dataProvider = "getGitaEnquiryFormData", dataProviderClass = DataSupplier2.class)
+	@Test(priority = 0, dataProvider = "getGitaEnquiryFormData", dataProviderClass = DataSupplier2.class)
 	//Verify that user is able to fill gita enquiry form, Successfull !!")
 	public void fillGitaEnquiryForm(HashMap<String, String> hm) throws InterruptedException {
 		enquiryform = new EnquiryForm(driver);
