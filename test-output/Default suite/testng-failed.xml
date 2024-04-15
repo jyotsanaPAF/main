@@ -3,13 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="TestCases.EnquiryTest">
+      <class name="TestCases.DonationTest">
         <methods>
-          <include name="fillVBCEnquiryForm"/>
           <include name="launchApplication"/>
-          <include name="setup"/>
+          <include name="donateForFoundation"/>
         </methods>
-      </class> <!-- TestCases.EnquiryTest -->
+      </class> <!-- TestCases.DonationTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
