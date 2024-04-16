@@ -62,7 +62,7 @@ public class AbstractComponent {
 
 	public void scrollDown() throws InterruptedException {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
-		js.executeScript("window.scrollBy(0,500)", "");
+		js.executeScript("window.scrollBy(0,250)", "");
 		Thread.sleep(500);
 	}
 

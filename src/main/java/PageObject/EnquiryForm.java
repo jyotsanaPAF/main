@@ -131,8 +131,8 @@ public class EnquiryForm extends AbstractComponent {
 		clickOnLiveSession();
 		waitForElementToAppear(waitingForSessionList);
 		selectSession(session);
-//		waitForElementToAppear(waitingForJoinNowButton);
-//		clickOnJoinNow();
+		waitForElementToAppear(waitingForJoinNowButton);
+		clickOnJoinNow();
 		fillFormDetails(session, name, email, phone, age, gender, duration, profession, state, city );
 		
 	}
@@ -148,6 +148,8 @@ public class EnquiryForm extends AbstractComponent {
 		selectByElement(listeningToAcharyaPrashantSinceField, duration);
 		selectByElement(professionField, profession);
 		scrollDown();
+		//((JavascriptExecutor) driver).executeScript("arguments[0].click();",selectByElement(stateField, state));
+		//((JavascriptExecutor) driver).executeScript("arguments[0].click();",selectByElement(stateField, state));
 		selectByElement(stateField, state);
 		Thread.sleep(1000);
 		selectCity(city);
