@@ -130,7 +130,7 @@ public class Donation extends AbstractComponent {
 		waitForElementToAppear(downloadReceiptPage);
 		scrollDown();
 		enterDetailsInDownloadReceiptPage(pinCode, state, city, idProof, adhar);
-		Thread.sleep(2000);
+		Thread.sleep(5000);
 		readReceiptPDF();
 	}
 
